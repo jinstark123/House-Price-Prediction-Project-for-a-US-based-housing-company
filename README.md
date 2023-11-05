@@ -6,43 +6,47 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a     
+  higher price
+-Understanding which variables are significant in predicting the price of a house
+-How well those variables describe the price of a house.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- The optimum lambda value in case of Ridge and Lasso is as follows:- 
+    Ridge – 10 
+    Lasso – 0.5 
+  The Mean Squared Error in case of Ridge and Lasso are: 
+    • Ridge - 0.0018396090787924262 
+    • Lasso - 0.0018634152629407766 
+  The Mean Squared Error of both the models are almost same. Since Lasso helps in feature 
+  reduction (as the coefficient value of some of the features become zero), Lasso has a better 
+  edge over Ridge and should be used as the final model.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
+- pandas as pd
+- matplotlib.pyplot as plt
+- seaborn as sns
+- numpy as np
+- from scipy.stats import norm
+- from sklearn.preprocessing import StandardScaler
+- from scipy import stats
+- from sklearn.model_selection import train_test_split
+- from sklearn.linear_model import LinearRegression,Lasso, Ridge
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by deepak kuamr jain - feel free to contact me!
 
 
 <!-- Optional -->
